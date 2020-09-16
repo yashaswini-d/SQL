@@ -1,0 +1,10 @@
+CREATE clause:
+  A relational database consists of a multiple related tables.A table consists of multiple rows and columns.CREATE STATEMENT is used to create a new table.
+
+Syntax:
+  CREATE TABLE table_name( column1 datatype(length), column2 datatype(length), column3 datatype(length),.......columnn datatype(length) PRIMARY KEY(COLUMN1, COLUMN2 ));
+
+Example:
+  CREATE TABLE department( id serial PRIMARY KEY, department_name CHARACTER VARYING (50) );
+  
+  
