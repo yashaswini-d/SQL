@@ -1,0 +1,15 @@
+SELECT:
+  In postgresql SELECT statement is used to fetch the data from a database table,which returns the data in the form of result table. These result tables are called result sets.
+  
+Syntax:
+  SELECT column1,column2,....columnN FROM table_name;
+  
+  If we want to fetch all the fields available in the database table we can use the following syntax:
+    SELECT * FROM table_name;
+    
+Example:
+  SELECT id,student_name,student_usn FROM student;
+                  OR
+  SELECT * FROM student
+  
+  
