@@ -7,4 +7,6 @@ Syntax:
 Example:
   CREATE TABLE department( id serial PRIMARY KEY, department_name CHARACTER VARYING (50) );
   
+
+  
   
