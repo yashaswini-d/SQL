@@ -12,4 +12,34 @@ Example:
                   OR
   SELECT * FROM student
   
+By using SELECT we can perform several functions:
+
+1.WHERE:
+    The WHERE clause uses the condition to filter the rows returned from the SELECT clause.
+ 
+ Syntax:
+    SELECT column1,column2,....columnN FROM table_name WHERE CONDITION value;
+    
+ Example:
+    SELECT id,student_name FROM student WHERE student_name IN ('ni','a','ha');
+    CONDITION: =, >, <, >=, <=, !=, AND, OR, IN, BETWEEN, LIKE, IS NULL, NOT.
+    
+ 2.GROUP BY:
+    The group by clause divides the rows returned from the SELECT statement into groups. For each group you can apply an aggregate function.
+    For example sum() to calculete sum of items.
+    count() to get the number of items.
+    
+    Syntax:
+      SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,.......
+      
+    Example:
+      SELECT employee_id, sum(salary) FROM employee GROUP BY employee_id;
+    
+  3.ORDER BY:
+     
+    
+    
+  
+    
+ 
   
