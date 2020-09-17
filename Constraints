@@ -17,12 +17,37 @@ Example:
   CREATE TABLE school(id SERIAL PRIMARY KEY NOT NULL, school_name CHARACTER VARYING(50) NOT NULL UNIQUE,school_location CHARACTER VARYING(50) NOT NULL UNIQUE);
   
 3.PRIMARY KEY:
-  Uniquely identifies each row/record in a database table.The primary key can't accept null values.In primary key column there is no need to enter the sequence manually by
-  defaultly the sequence of index is generated in a column.
+  Uniquely identifies each row/record in a database table.The primary key can't accept null values.In primary key column there is no need to enter the sequence manually,
+  by defaultly the sequence of index is generated in a column.
   
 Syntax:
   CREATE TABLE table_name ( column1 datatype constraint,column2 datatype constraint,column3 datatype constraint,.......columnN datatype constraint);
   
 Example:
-  CREATE TABLE college(id SERIAL PRIMARY KEY, college_name CHARACTER VARYING(50) 
+  CREATE TABLE college(id SERIAL PRIMARY KEY, college_name CHARACTER VARYING(50), college_location CHARACTER VARYING(50));
+  
+4.FOREIGN KEY:
+  Constrains data based on columns in other tables.The foreign key will accept multiple null values.In foreign key column we need to enter the values manually.
+  We can have one or more foreign key in a table.The foreign key is a primary key in a reference table.
+  
+Syntax:
+  CREATE TABLE table_name ( column1 datatype constraint,column2 datatype constraint,column3 datatype constraint,.......columnN datatype constraint);
+  
+Example:
+  CREATE TABLE student(id SERIAL PRIMARY KEY, student_name CHARACTER VARYING(50), college_id INTEGER REFERENCES college(id), student_usn CHARACTER VARYING(20));
+  
+  college_id of the table student is referring the id of college table. So college_id is created as foreign key in student table.
+  
+5.CHECK:
+ The check constraint enables a condition to check the value being entered into a record.
+  
+Syntax:
+  CREATE TABLE table_name ( column1 datatype constraint,column2 datatype constraint,column3 datatype constraint,.......columnN datatype constraint);
+  
+Example:
+  CREATE TABLE employee(id SERIAL PRIMARY KEY, employee_name CHARACTER VRYING(50), salary BIGINT CHECK (salary >= 500000 ));
+  
+
+  
+  
   
