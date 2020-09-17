@@ -1,0 +1,28 @@
+1.NOT NULL:
+  It ensures that a column cannot have null value.
+  
+Syntax:
+  CREATE TABLE table_name ( column1 datatype constraint,column2 datatype constraint,column3 datatype constraint,.......columnN datatype constraint);
+  
+ Example:
+    CREATE TABLE department( id SERIAL PRIMARY KEY NOT NULL,department_name CHARACTER VARYING(50) NOT NULL);
+    
+2.UNIQUE:
+  It ensures that all values in column are different.
+  
+Syntax:
+  CREATE TABLE table_name ( column1 datatype constraint,column2 datatype constraint,column3 datatype constraint,.......columnN datatype constraint);
+  
+Example:
+  CREATE TABLE school(id SERIAL PRIMARY KEY NOT NULL, school_name CHARACTER VARYING(50) NOT NULL UNIQUE,school_location CHARACTER VARYING(50) NOT NULL UNIQUE);
+  
+3.PRIMARY KEY:
+  Uniquely identifies each row/record in a database table.The primary key can't accept null values.In primary key column there is no need to enter the sequence manually by
+  defaultly the sequence of index is generated in a column.
+  
+Syntax:
+  CREATE TABLE table_name ( column1 datatype constraint,column2 datatype constraint,column3 datatype constraint,.......columnN datatype constraint);
+  
+Example:
+  CREATE TABLE college(id SERIAL PRIMARY KEY, college_name CHARACTER VARYING(50) 
+  
