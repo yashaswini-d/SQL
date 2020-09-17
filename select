@@ -19,10 +19,10 @@ By using SELECT we can perform several functions:
  
  Syntax:
     SELECT column1,column2,....columnN FROM table_name WHERE CONDITION value;
+    CONDITION: =, >, <, >=, <=, !=, AND, OR, IN, BETWEEN, LIKE, IS NULL, NOT.
     
  Example:
     SELECT id,student_name FROM student WHERE student_name IN ('ni','a','ha');
-    CONDITION: =, >, <, >=, <=, !=, AND, OR, IN, BETWEEN, LIKE, IS NULL, NOT.
     
  2.GROUP BY:
     The group by clause divides the rows returned from the SELECT statement into groups. For each group you can apply an aggregate function.
@@ -35,7 +35,8 @@ By using SELECT we can perform several functions:
     Example:
       SELECT employee_id, sum(salary) FROM employee GROUP BY employee_id;
     
-  3.ORDER BY:
+  3.HAVING:
+      
      
     
     
