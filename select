@@ -44,6 +44,18 @@ By using SELECT we can perform several functions:
         
       Example:
         SELECT employee_id, sum(salary) FROM employee GROUP BY employee_id HAVING (salary>10000);
+        
+    4.ORDER BY:
+        When you query data from a table, the SELECT statement returns rows in an unspecified order. To sort the rows of the result set, you use the ORDER BY clause
+        in the SELECT statement.The ORDER BY clause allows you to sort rows returned by a SELECT clause in ascending or descending order based on a sort expression.
+        
+        Syntax:
+          SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition ORDER BY sort_expression[asc| desc];
+          
+        Example:
+          SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition ORDER BY id ASC;
+          
+   
       
      
     
