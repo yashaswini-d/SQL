@@ -55,6 +55,19 @@ By using SELECT we can perform several functions:
         Example:
           SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition ORDER BY id ASC;
           
+     5.LIMIT:
+        The PostgreSQL LIMIT clause is used to limit the data amount returned by the SELECT statement.
+        
+        Syntax:
+          SELECT column1, column2, columnN FROM table_name LIMIT [no of rows];    OR
+          SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition ORDER BY sort_expression[asc| desc] 
+          LIMIT[number of rows];
+          
+        Example:
+          SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition ORDER BY id ASC LIMIT 4;
+          
+          
+          
    
       
      
