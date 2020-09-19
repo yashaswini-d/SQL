@@ -30,12 +30,20 @@ By using SELECT we can perform several functions:
     count() to get the number of items.
     
     Syntax:
-      SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,.......
+      SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,.......;
       
     Example:
       SELECT employee_id, sum(salary) FROM employee GROUP BY employee_id;
     
   3.HAVING:
+      The having clause specifies a search coondition for a group or an aggregate. The HAVING clause is often used with the GROUP BY clause to filter groups or aggregates 
+      based on a specified condition.
+      
+      Syntax:
+        SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition;
+        
+      Example:
+        SELECT employee_id, sum(salary) FROM employee GROUP BY employee_id HAVING (salary>10000);
       
      
     
