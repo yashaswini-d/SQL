@@ -61,10 +61,22 @@ By using SELECT we can perform several functions:
         Syntax:
           SELECT column1, column2, columnN FROM table_name LIMIT [no of rows];    OR
           SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition ORDER BY sort_expression[asc| desc] 
-          LIMIT[number of rows];
+          LIMIT[no of rows];
           
         Example:
           SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition ORDER BY id ASC LIMIT 4;
+          
+     6.OFFSET:
+        OFFSET says to skip that many rows before beginning to return rows. OFFSET 0 is the same as omitting the OFFSET clause. If both OFFSET and LIMIT appear, 
+        then OFFSET rows are skipped before starting to count the LIMIT rows that are returned.
+        
+        Syntax:
+          SELECT column1, column2, columnN FROM table_name LIMIT [no of rows] OFFSET [no of rows]  OR
+          SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition ORDER BY sort_expression[asc| desc] 
+          LIMIT[number of rows] OFFSET [no of rows];
+          
+        Example:
+          SELECT column1, column2,.... aggregate function(column3), FROM table_name GROUP BY column1,column2,..... HAVING condition ORDER BY id ASC LIMIT 4 OFFSET 2;
           
           
           
