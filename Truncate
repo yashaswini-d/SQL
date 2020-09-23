@@ -1,0 +1,13 @@
+TRUNCATE:
+  The TRUNCATE TABLE statement is used to remove all records from a table or set of tables in PostgreSQL. 
+  It performs the same function as a DELETE statement without a WHERE clause.
+  The  TRUNCATE TABLE statement deletes all data from a table without scanning it. This is the reason why it is faster than the DELETE statement.
+  The TRUCATE statement won't destroy the structure of Table.
+  
+Syntax:
+  TRUNCATE TABLE table_name;
+  
+Example:
+  TRUNCATE TABLE employee;
+  
+For documentation of TRUCATE refer at https://www.postgresql.org/docs/9.1/sql-truncate.html.
