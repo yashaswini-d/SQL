@@ -1,0 +1,13 @@
+DROP:
+  The PostgreSQL DROP TABLE statement is used to remove a table definition and all associated data, indexes, rules, triggers, and constraints for that table. 
+  DROP will destroy the whole structure of the table.
+  
+Syntax:
+  ALTER TABLE table_name DROP COLUMN column_name;
+  DROP TABLE table_name;
+  
+Example:
+  ALTER TABLE table_name DROP COLUMN id;
+  DROP TABLE employee_details;
+  
+  For documentation of DROP clause refer at https://www.postgresql.org/docs/8.1/sql-droptable.html.
