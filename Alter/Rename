@@ -1,0 +1,18 @@
+ALTER:
+  The PostgreSQL ALTER command is used to add, delete or modify columns in an existing table.
+  
+Syntax:
+  ALTER TABLE table_name ADD column_name datatype;
+  ALTER TABLE table_name DROP COLUMN column_name;
+  ALTER TABLE table_name ALTER COLUMN column_name TYPE datatype;
+  ALTER TABLE table_name MODIFY column_name datatype NOT NULL;
+  ALTER TABLE table_name ADD CONSTRAINT MyUniqueConstraint UNIQUE(column1, column2...);
+  ALTER TABLE table_name ADD CONSTRAINT MyUniqueConstraint CHECK (CONDITION);
+  ALTER TABLE table_name ADD CONSTRAINT MyPrimaryKey PRIMARY KEY (column1, column2...);
+  ALTER TABLE table_name DROP CONSTRAINT MyUniqueConstraint;
+  ALTER TABLE table_name DROP CONSTRAINT MyPrimaryKey;
+  
+Example:
+  ALTER TABLE COMPANY DROP GENDER;
+  
+  For in detail about DELETE clause refer the documentation at https://www.postgresql.org/docs/9.1/sql-altertable.html.
