@@ -1,1 +1,10 @@
+DELETE:
+  The DELETE clause in PostgreSQL is used to delete the existing records from a table.
+  
+Syntax:
+  DELETE FROM table_name WHERE condition;
+  
+Example:
+  DELETE FROM employee WHERE id=2;
+  
 
